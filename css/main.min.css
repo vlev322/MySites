@@ -9026,10 +9026,9 @@ body textarea:required:valid {
   color: #666; }
 
 html, body {
-  height: 100%; }
-
-html {
-  overflow: hidden-x; }
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%; }
 
 body {
   font-size: 16px;
@@ -9065,6 +9064,9 @@ section {
   height: 100%;
   background-color: #21292f;
   opacity: .7; }
+
+a {
+  cursor: pointer; }
 
 .img-responsive {
   display: block;
@@ -9177,6 +9179,9 @@ nav {
 
 .drop:hover .sub {
   display: block; }
+
+.drop {
+  cursor: pointer; }
 
 .sub {
   display: none;
@@ -9294,7 +9299,8 @@ nav {
   position: relative;
   top: 0;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  margin-top: 25px; }
 
 .flex-center {
   margin: auto; }
@@ -9361,7 +9367,7 @@ nav {
   margin-top: 35px;
   padding: 8px; }
   .callback .success {
-    display: none; }
+    display: block; }
   .callback a, .callback input, .callback button {
     display: block;
     text-align: center;
@@ -9369,7 +9375,8 @@ nav {
   .callback-input {
     background-color: #fff;
     padding: 16px 0;
-    color: #74baa0; }
+    color: #74baa0;
+    width: 86%; }
     .callback-input:hover, .callback-input:active {
       background-color: #fff; }
 
@@ -9975,6 +9982,9 @@ footer {
 .documents {
   margin-top: 60px; }
 
+.btn-top {
+  width: 86%; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -10068,7 +10078,11 @@ footer {
     margin-top: 10px;
     font-size: 14px; }
     .m-cb-l i {
-      margin-right: 5px; }
+      margin-right: 5px;
+      margin-left: 0;
+      margin-top: 12px; }
+  .m-cb-r.n-w {
+    margin-top: 12px; }
   .welcome-comp h3 {
     font-size: 16px; }
   .welcome-comp h1 {
